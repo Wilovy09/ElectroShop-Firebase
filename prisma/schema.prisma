@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+// Aqui declaramos el modelo para la tabla de productos para la base de datos (dev.db)
+model Product {
+  id        Int      @id @default(autoincrement())
+  nombre    String 
+  imagen    String
+  marca     String? // ? es para que sea opcional
+  codigo    String   @unique
+  stock     Int?    // cuanto tienes en inventario
+  precio    Float
+  categoria String
+  descripcion String
+}
