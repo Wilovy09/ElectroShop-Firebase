@@ -135,7 +135,6 @@
               <th class="py-3 px-4 text-left">Producto</th>
               <th class="py-3 px-4 text-left">Cantidad</th>
               <th class="py-3 px-4 text-left">Precio</th>
-              <th class="py-3 px-4 text-left">Eliminar</th>
             </tr>
           </thead>
           <tbody class="text-blue-gray-900">
@@ -159,15 +158,6 @@
                   />
                 </td>
                 <td class="py-3 px-4 text-center">{product.precio}</td>
-                <td class="py-3 px-4 text-center">
-                  <button
-                    on:click={deleteProductLocalStorage}
-                    type="button"
-                    class="bg-red-500 p-2 rounded-xl text-white transition-all hover:bg-red-800"
-                  >
-                    Eliminar
-                  </button>
-                </td>
               </tr>
             {/each}
           </tbody>
