@@ -52,7 +52,7 @@
   <div class="flex-1 flex justify-between items-center">
     <a href="/electroshop" class="flex text-lg font-semibold">
       <img
-        src="/favicon.svg"
+        src="/favicon.png"
         alt="logo electroshop"
         class="text-black h-8 mr-2"
       />
