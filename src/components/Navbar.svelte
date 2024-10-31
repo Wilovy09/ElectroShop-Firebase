@@ -15,7 +15,7 @@
 
   let codigoUser = "";
   async function searchCode() {
-    const url = `http://localhost:8000/api/product/name/${codigoUser}`;
+    const url = `http://localhost:8000/api/product/code/${codigoUser}`;
     const options = {
       method: "GET",
       headers: {
